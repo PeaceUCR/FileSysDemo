@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File System Dashboard</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+<!--Progressive loader indicator start-->
+<div class="indicator">
+    <div class="vertical-centered-box">
+        <div class="content">
+            <div class="loader-circle"></div>
+            <div class="loader-line-mask one">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask two">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask three">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-mask four">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text"><p>Data Used</p><p><span id="size"></span><span id="unit"></span></p></div>
+</div>
+<!--Progressive loader indicator end-->
+
+<div id ="preview">
+
+</div>
+
+<div class="header">
+    <h1 class="title">File System Dashboard<a href="https://stackoverflow.com/questions/21324193/file-upload-to-heroku-not-working">Heroku upload err</a></h1>
+    <span id ="notification"></span>
+</div>
+
+
+<input type="file" name="upload" id="upload" >
+<label tabindex="0" for="upload" id="uploadLabel" class="">Upload File...</label>
+
+<p id="msg"></p>
+
+
+<div id="file-list">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script src="/javascripts/index.js"></script>
+
+</body>
+</html>

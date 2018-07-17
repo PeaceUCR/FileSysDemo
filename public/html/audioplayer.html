@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://howlerjs.com/assets/howler.js/examples/player/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="user-scalable=no">
+    <title>Audio Player Powered by Howler</title>
+    <link rel="stylesheet" href="/stylesheets/audio/styles.css">
+</head>
+<body>
+
+<div id="title">
+    <span id="track"></span>
+    <div id="timer">0:00</div>
+    <div id="duration">0:00</div>
+</div>
+
+<div class="controlsOuter">
+    <div class="controlsInner">
+        <div id="loading"></div>
+        <div class="btn" id="playBtn"></div>
+        <div class="btn" id="pauseBtn"></div>
+        <div class="btn" id="prevBtn"></div>
+        <div class="btn" id="nextBtn"></div>
+    </div>
+    <div class="btn" id="playlistBtn"></div>
+    <div class="btn" id="volumeBtn"></div>
+</div>
+
+<div id="waveform" style="margin: -49.35px auto;"><canvas width="1595" height="98" style="height: 100%; width: 100%;"></canvas></div>
+<div id="bar"></div>
+<div id="progress"></div>
+
+
+<div id="volume" class="fadeout">
+    <div id="barFull" class="bar"></div>
+    <div id="barEmpty" class="bar"></div>
+    <div id="sliderBtn"></div>
+</div>
+
+<script src="/javascripts/audio/howler.core.js"></script>
+<script src="/javascripts/audio/siriwave.js"></script>
+<script src="/javascripts/audio/player.js"></script>
+
+</body></html>
